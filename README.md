@@ -16,6 +16,7 @@ Citation
 2-[GB-Score: Minimally Designed Machine Learning Scoring Function Based on Distance-weighted Interatomic Contact Features](https://chemrxiv.org/engage/chemrxiv/article-details/6210b55ce0f5297c08b7f36a)
 
 3-[Impact of non-normal error distributions on the benchmarking and ranking of quantum machine learning models](https://iopscience.iop.org/article/10.1088/2632-2153/aba184/meta)
+
 Installation
 --
 Below packages should be installed for using 3S. Dependecies:
@@ -91,5 +92,5 @@ analysed.
 
 Add hydrogens to ligand and protein at pH=7.4 using PDB2PQR and Openbabel.
 
-Check the provided **tutorial** file for more information and example.
+Check the provided **Tutorial.pdf** file for more information and example.
 
