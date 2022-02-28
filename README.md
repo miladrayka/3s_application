@@ -71,7 +71,10 @@ Usage
 --
 
 ![](https://github.com/miladrayka/3s_application/blob/main/sample_gui.JPG)
-*View of 3S GUI*
+
+|:--:|
+
+| <b>View of 3S GUI</b>|
 
 
 So far, this suite contains five tools:
