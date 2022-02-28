@@ -70,7 +70,8 @@ Which *env* is the location to create the virtual environment. Now you can insta
 Usage
 --
 
-![View of 3S GUI](https://github.com/miladrayka/3s_application/blob/main/sample_gui.JPG)
+![](https://github.com/miladrayka/3s_application/blob/main/sample_gui.JPG)
+*View of 3S GUI*
 
 
 So far, this suite contains five tools:
