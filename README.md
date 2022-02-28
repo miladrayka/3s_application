@@ -1,6 +1,6 @@
 3S_Application
 --
-Straightforwarding Scoring Suite (3S) is a collection of several tools to ease the procedure of desiging a machine learning scoring function.
+Straightforwarding Scoring Suite (3S) is a collection of several tools to ease the procedure of desiging a machine learning scoring function by providing a GUI.
 
 ![](https://github.com/miladrayka/3s_application/blob/main/logo.png)
 
@@ -69,6 +69,10 @@ Which *env* is the location to create the virtual environment. Now you can insta
 
 Usage
 --
+
+![](https://github.com/miladrayka/3s_application/blob/main/sample_gui.jpg)
+
+
 So far, this suite contains five tools:
 
 1-Feature Generation:
