@@ -392,7 +392,7 @@ $e_{M, i} = r_{i} - C_{M,i}$"""
         st.info(f"Root mean square deviation (RMSD): {rmsd:.3}")
         st.info(f"Mean absolute error (MAE): {mae:.3f}")
 
-    except:
+    except Exception:
         st.error("**Error**: Enter correct path of file (.csv)!")
         sys.exit("csv file is not provided.")
 
@@ -417,7 +417,7 @@ depending on the sample size and the chosen level of type I errors *α* (typical
         if 0.05 < p_value:
             st.info("So, error distribution is normal (*Pr* > 0.05).")
 
-    except:
+    except Exception:
         st.error("**Error**: Enter correct path of file (.csv)!")
 
     st.subheader("Skewness and Kurtosis Tests")
@@ -445,7 +445,7 @@ the tails of the distribution. Kurtosis of a normal distribution is equal to 3; 
         if skewness_value != 0 and kurtosis_value < 3:
             st.info("Error distribution is asymmetric and platykurtic.")
 
-    except:
+    except Exception:
         st.error("**Error**: Enter correct path of file (.csv)!")
 
     st.subheader("$95^{th}$ quantile of the absolute errors distribution")
@@ -465,7 +465,7 @@ probability to exceed)."""
 
         st.metric("Q95", np.round(q95_value, 4))
 
-    except:
+    except Exception:
         st.error("**Error**: Enter correct path of file (.csv)!")
 
     st.subheader("Normal Quantile-Quantile Plot")

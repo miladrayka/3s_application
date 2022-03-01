@@ -1,5 +1,9 @@
 3S_Application
 --
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/miladrayka/3s_application.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/miladrayka/3s_application/context:python)
+
 Straightforwarding Scoring Suite (3S) is a collection of several tools to ease the procedure of desiging a machine learning scoring function by providing a GUI.
 
 ![](https://github.com/miladrayka/3s_application/blob/main/logo.png)
@@ -98,4 +102,18 @@ analysed.
 Add hydrogens to ligand and protein at pH=7.4 using PDB2PQR and Openbabel.
 
 Check the provided **Tutorial.pdf** file for more information and example.
+
+Development
+--
+
+To ensure code quality and consistency the following tools are used during development:
+
+- [black](https://black.readthedocs.io/en/stable/)
+- [isort](https://pycqa.github.io/isort/)
+- [LGTM](https://lgtm.com/)
+
+Copyright
+--
+
+Copyright (c) 2021-2022, Milad Rayka
 
