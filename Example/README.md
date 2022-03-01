@@ -3,7 +3,6 @@ Example
 ![](https://github.com/miladrayka/3s_application/blob/main/badge.svg) 
 
 --
-
 Example folder contains 3 subfolders:
 
 **1** - files:
