@@ -114,8 +114,8 @@ System Specification
 
 | OS  |  RAM | CPU  | Browser |
 | ------------ | ------------ | ------------ |------------ |
-| Windows 10  | 4.00 GB  |  Intel Core (TM) i5 - 7200U (2.50 GHz) | 97.0.1 (64-bit)|
-| Ubuntu 20.04  |  8.00 GB | AMD FX (TM) - 770k Quad Core (3.50 GHz)  | 97.0.1 (64-bit)| 
+| Windows 10  | 4.00 GB  |  Intel Core (TM) i5 - 7200U (2.50 GHz) | Firefox - 97.0.1 (64-bit)|
+| Ubuntu 20.04  |  8.00 GB | AMD FX (TM) - 770k Quad Core (3.50 GHz)  | Firefox - 97.0.1 (64-bit)| 
 
 Development
 --
