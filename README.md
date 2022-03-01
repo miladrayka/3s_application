@@ -6,7 +6,7 @@
 
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
-
+<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />
 
 Straightforwarding Scoring Suite (3S) is a collection of several tools to ease the procedure of desiging a machine learning scoring function by providing a GUI.
 
@@ -114,8 +114,8 @@ System Specification
 
 | OS  |  RAM | CPU  | Browser |
 | ------------ | ------------ | ------------ |------------ |
-| Windows 10  | 4.00 GB  |  Intel Core (TM) i5 - 7200U (2.50 GHz) | Firefox ( [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>) - 97.0.1 (64-bit)|
-| Ubuntu 20.04  |  8.00 GB | AMD FX (TM) - 770k Quad Core (3.50 GHz)  | Firefox ( [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>) - 97.0.1 (64-bit)| 
+| Windows 10  | 4.00 GB  |  Intel Core (TM) i5 - 7200U (2.50 GHz) | Firefox - 97.0.1 (64-bit)|
+| Ubuntu 20.04  |  8.00 GB | AMD FX (TM) - 770k Quad Core (3.50 GHz)  | Firefox - 97.0.1 (64-bit)| 
 
 Development
 --
