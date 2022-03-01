@@ -2,11 +2,9 @@ Example
 --
 ![](https://github.com/miladrayka/3s_application/blob/main/badge.svg) 
 
----
-
 Example folder contains 3 subfolders:
 
-**1** - files:
+**1 - files**:
 
 In this folder, all files for running example are provided. 
 
@@ -28,10 +26,10 @@ In this folder, all files for running example are provided.
 
 `std_pdbbind_2019.csv`: CSV file contains std of retained features after preprocessing (Use for prediction by GB-Score).
 
-**2** - structures:
+**2 - structures**:
 
 In this folder, ten structures (*.mol2* for ligand and *.pdb* for protein) are provided for testing feature generation and adding hydrogens.
 
-**3** - model:
+**3 - model**:
 
 In this folder, *GB-Score* trained model is located. This model can be used for prediction task. For more information check [2]. 
