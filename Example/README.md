@@ -1,5 +1,4 @@
-### Example
-
+Example
 ---
 ![](https://github.com/miladrayka/3s_application/blob/main/badge.svg) 
 
