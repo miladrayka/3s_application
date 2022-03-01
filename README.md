@@ -107,6 +107,16 @@ Add hydrogens to ligand and protein at pH=7.4 using PDB2PQR and Openbabel.
 
 Check the provided **Tutorial.pdf** file for more information and example.
 
+Tested System
+--
+
+3*S* is tested on the following systems:
+
+| OS  |  RAM | CPU  | Browser |
+| ------------ | ------------ | ------------ |
+| Windows 10  | 4.00 GB  |  Intel Core (TM) i5 - 7200U (2.50 GHz) | 97.0.1 (64-bit)|
+| Ubuntu 20.04  |  8.00 GB | AMD FX (TM) - 770k Quad Core (3.50 GHz)  | 97.0.1 (64-bit)| 
+
 Development
 --
 
