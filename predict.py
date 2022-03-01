@@ -1,11 +1,12 @@
-import time
 import argparse
-from joblib import dump, load
-from scipy.stats import pearsonr
-from sklearn.metrics import mean_squared_error
+import time
+
 import numpy as np
 import pandas as pd
 import streamlit as st
+from joblib import dump, load
+from scipy.stats import pearsonr
+from sklearn.metrics import mean_squared_error
 
 
 def predict(

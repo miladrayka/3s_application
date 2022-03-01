@@ -1,18 +1,20 @@
 import os
-import streamlit as st
-from generate_features import generate_features
+import subprocess
+import sys
 import time
-from PIL import Image
-from train import train_pipline
+from pathlib import Path
+
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-from scipy.stats import skew, kurtosis, shapiro, probplot
 import seaborn as sns
-import sys
+import streamlit as st
+from PIL import Image
+from scipy.stats import kurtosis, probplot, shapiro, skew
+
+from generate_features import generate_features
 from predict import predict
-from pathlib import Path
-import subprocess
+from train import train_pipline
 
 sys.tracebacklimit = 0
 

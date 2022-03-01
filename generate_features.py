@@ -1,15 +1,15 @@
+import argparse
 import os
 import time
-import argparse
-import progressbar
 from glob import glob
 from pathlib import Path
+
 import numpy as np
 import pandas as pd
-from scipy import spatial
-from biopandas.pdb import PandasPdb
+import progressbar
 from biopandas.mol2 import PandasMol2
-
+from biopandas.pdb import PandasPdb
+from scipy import spatial
 
 atom_types = {
     "OE1": "O",

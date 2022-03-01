@@ -1,12 +1,13 @@
-import time
-import pandas as pd
-import numpy as np
-from xgboost import XGBRegressor
 import argparse
+import time
+
+import numpy as np
+import pandas as pd
+import streamlit as st
 from joblib import dump
 from scipy.stats import pearsonr
 from sklearn.metrics import mean_squared_error
-import streamlit as st
+from xgboost import XGBRegressor
 
 
 def input_reader(path_input, path_target):
