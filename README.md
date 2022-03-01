@@ -6,7 +6,7 @@
 
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
-<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />
+
 
 Straightforwarding Scoring Suite (3S) is a collection of several tools to ease the procedure of desiging a machine learning scoring function by providing a GUI.
 
