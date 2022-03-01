@@ -55,9 +55,7 @@ add_selectbox = st.sidebar.selectbox(
 
 if add_selectbox == "Introduction":
 
-    image = Image.open(
-        "logo.png",
-    )
+    image = Image.open("logo.png",)
 
     st.image(image)
 
@@ -131,8 +129,8 @@ ligand atom of type *i* and the *k*-th protein atom of type *j*, which is less t
 
     directory = st.text_input(
         "Enter directory of your complex structures:",
-        value="sample",
-        help="Indicating path of complex structures.",
+        value="structures",
+        help="Indicating path of complex structures. e.g /Example/structures",
     )
 
     assert os.path.isdir(directory), "Enter valid directory."
@@ -185,7 +183,7 @@ ligand atom of type *i* and the *k*-th protein atom of type *j*, which is less t
         "Enter output filename in .csv:",
         value="sample.csv",
         help="""Enter your desired filename 
-                         with csv extension as an output file.""",
+                         with csv extension as an output file. e.g output.csv""",
     )
 
     assert (
@@ -232,7 +230,7 @@ if add_selectbox == "2-Model Training":
     path_x = st.text_input(
         "Enter path of features data (.csv):",
         value="x_set.csv",
-        help="Indicating path of features data.",
+        help="Indicating path of features data. e.g Example/files/x_set.csv",
     )
 
     assert os.path.exists(path_x), "Error: File doesn't exist."
@@ -248,7 +246,7 @@ if add_selectbox == "2-Model Training":
     path_y = st.text_input(
         "Enter path of target data (.csv):",
         value="y_set.csv",
-        help="Indicating path of target data.",
+        help="Indicating path of target data. Example/files/y_set.csv",
     )
 
     assert os.path.exists(path_y), "Error: File doesn't exist."
@@ -264,7 +262,7 @@ if add_selectbox == "2-Model Training":
     path_test_id = st.text_input(
         "Enter path of test set pdbid (.csv):",
         value="test_set_pdbid.csv",
-        help="Indicating path of test set pdbid.",
+        help="Indicating path of test set pdbid. e.g Example/files/test_set_pdbid.csv",
     )
 
     assert os.path.exists(path_test_id), "Error: File doesn't exist."
@@ -310,7 +308,7 @@ if add_selectbox == "2-Model Training":
         value="saved_model.joblib",
         help="""Enter your desired filename 
                          with joblib extension as an output file
-                         to save the trained model.""",
+                         to save the trained model. e.g trained_model.joblib""",
     )
 
     assert (
@@ -318,8 +316,7 @@ if add_selectbox == "2-Model Training":
     ), "File extension should be joblib."
 
     execute = st.button(
-        "Start training operation",
-        help="Press the button to start training.",
+        "Start training operation", help="Press the button to start training.",
     )
 
     if execute:
@@ -376,7 +373,7 @@ $e_{M, i} = r_{i} - C_{M,i}$"""
         uploaded_file = st.text_input(
             "Load your data (.csv)",
             value="prediction_test_set.csv",
-            help="Enter .csv file of your data",
+            help="Enter .csv file of your data. e.g Example/files/prediction_test_set.csv",
         )
 
         df = pd.read_csv(uploaded_file)
@@ -656,7 +653,7 @@ if add_selectbox == "3-Prediction":
     path_ml_score = st.text_input(
         "A ML saved model",
         value="gb_score.joblib",
-        help="A ML saved model based on XGBoost in .joblib.",
+        help="A ML saved model based on XGBoost in .joblib. e.g /Example/model/gb_score.joblib",
     )
 
     assert os.path.exists(path_ml_score), "Error: File doesn't exist."
@@ -668,7 +665,7 @@ if add_selectbox == "3-Prediction":
         "Features name",
         value="columns_pdbbind_2019.txt",
         help="""A file (.txt) contains name of all not discarded columns during
-        preprocessing. Generated during **Model Training** as *columns.txt*.""",
+        preprocessing. Generated during **Model Training** as *columns.txt*. e.g /Example/files/columns_pdbbind_2019.txt""",
     )
 
     assert os.path.exists(path_columns), "Error: File doesn't exist."
@@ -679,7 +676,7 @@ if add_selectbox == "3-Prediction":
     path_mean = st.text_input(
         "Mean of features",
         value="mean_pdbbind_2019.csv",
-        help="""A csv file contain all mean for features. Generated during **Model Training** as *mean.csv*.""",
+        help="""A csv file contain all mean for features. Generated during **Model Training** as *mean.csv*. e.g /Example/files/mean_pdbbind_2019.csv""",
     )
 
     assert os.path.exists(path_mean), "Error: File doesn't exist."
@@ -690,7 +687,7 @@ if add_selectbox == "3-Prediction":
     path_std = st.text_input(
         "STD of features",
         value="std_pdbbind_2019.csv",
-        help="A csv file contain all std for features. Generated during **Model Training** as *std.csv*.",
+        help="A csv file contain all std for features. Generated during **Model Training** as *std.csv*. e.g /Example/files/std_pdbbind_2019.csv",
     )
 
     assert os.path.exists(path_std), "Error: File doesn't exist."
@@ -701,7 +698,7 @@ if add_selectbox == "3-Prediction":
     path_x_test = st.text_input(
         "Generated features of complex",
         value="x_test_set.csv",
-        help="A csv file contains test set features.",
+        help="A csv file contains test set features. e.g /Example/files/x_test_set.csv",
     )
 
     assert os.path.exists(path_x_test), "Error: File doesn't exist."
@@ -712,7 +709,7 @@ if add_selectbox == "3-Prediction":
     y_pred_filename = st.text_input(
         "Prediction filename",
         value="pred_test_set.csv",
-        help="Filename for saving prediction with .csv extension.",
+        help="Filename for saving prediction with .csv extension. e.g /Example/files/pred_test_set.csv",
     )
 
     assert (
@@ -726,8 +723,7 @@ if add_selectbox == "3-Prediction":
     )
 
     execute = st.button(
-        "Start predicting operation",
-        help="Press the button to start prediction.",
+        "Start predicting operation", help="Press the button to start prediction.",
     )
 
     if execute:
@@ -807,7 +803,7 @@ if add_selectbox == "5-Add Hydrogen":
     directory = st.text_input(
         "Enter directory of your complex structures:",
         value="sample",
-        help="Indicating path of complex structures.",
+        help="Indicating path of complex structures. e.g Example/structures",
     )
 
     assert os.path.isdir(directory), "Enter valid directory."
@@ -827,8 +823,7 @@ if add_selectbox == "5-Add Hydrogen":
             )
 
     execute = st.button(
-        "Start operation",
-        help="Press the button to start prediction.",
+        "Start operation", help="Press the button to start prediction.",
     )
 
     if execute:
