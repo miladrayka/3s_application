@@ -77,6 +77,10 @@ Which *env* is the location to create the virtual environment. Now you can insta
 
 > 3 - python install -r requirements.txt
 
+For running 3*S*:
+
+> streamlit run webapp.py
+
 Usage
 --
 
