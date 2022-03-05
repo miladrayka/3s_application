@@ -19,10 +19,11 @@ setup(
                       "streamlit", 
                       "notebook",
                       "matplotlib",
-					  "seaborn",
+		       "seaborn",
                       "scikit-learn",
                       "xgboost",
-                      "progressbar2"],
+                      "progressbar2",
+                      "pdb2pqr"],
     platforms=["Linux", "Windows"],
     python_requires=">=3.7",
 )

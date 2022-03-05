@@ -306,16 +306,16 @@ if add_selectbox == "2-Model Training":
     )
 
     filename = st.text_input(
-        "Enter output filename in .joblib:",
+        "Enter output filename in .json:",
         value="saved_model.joblib",
         help="""Enter your desired filename 
                          with joblib extension as an output file
-                         to save the trained model. e.g trained_model.joblib""",
+                         to save the trained model. e.g trained_model.json""",
     )
 
     assert (
-        os.path.splitext(filename)[1][1:].strip().lower() == "joblib"
-    ), "File extension should be joblib."
+        os.path.splitext(filename)[1][1:].strip().lower() == "json"
+    ), "File extension should be json."
 
     execute = st.button(
         "Start training operation", help="Press the button to start training.",
@@ -333,7 +333,7 @@ if add_selectbox == "2-Model Training":
                 path_test_id,
                 var_threshold,
                 corr_threshold,
-                val_set_size,
+                0,
                 gpu,
                 filename,
             )
@@ -651,17 +651,23 @@ if add_selectbox == "3-Prediction":
         **std_pdbbind_2019.csv** files should be used for **Features name**, **Mean of features**, and 
         **STD of features** respectively."""
     )
+    
+    gpu = st.checkbox(
+        "Use GPU accelerator during prediction.",
+        value=False,
+        help="XGBT uses GPU to accelerate predicting procedure.",
+    )
 
     path_ml_score = st.text_input(
         "A ML saved model",
-        value="gb_score.joblib",
-        help="A ML saved model based on XGBoost in .joblib. e.g /Example/model/gb_score.joblib",
+        value="gb_score_cpu.json",
+        help="A ML saved model based on XGBoost in .joblib. e.g /Example/model/gb_score_cpu.json",
     )
 
     assert os.path.exists(path_ml_score), "Error: File doesn't exist."
     assert (
-        os.path.splitext(path_ml_score)[1][1:].strip().lower() == "joblib"
-    ), "File extension should be joblib."
+        os.path.splitext(path_ml_score)[1][1:].strip().lower() == "json"
+    ), "File extension should be json."
 
     path_columns = st.text_input(
         "Features name",
@@ -742,6 +748,7 @@ if add_selectbox == "3-Prediction":
                 path_x_test,
                 y_pred_filename,
                 path_y_test,
+                gpu,
             )
 
         end = time.time()
@@ -804,7 +811,7 @@ if add_selectbox == "5-Add Hydrogen":
 
     directory = st.text_input(
         "Enter directory of your complex structures:",
-        value="sample",
+        value="structures",
         help="Indicating path of complex structures. e.g Example/structures",
     )
 

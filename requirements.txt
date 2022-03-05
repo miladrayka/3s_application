@@ -9,4 +9,5 @@ scipy==1.8.0
 seaborn==0.11.2
 streamlit==1.6.0
 xgboost==1.5.2
+pdb2pqr==3.5.2
 

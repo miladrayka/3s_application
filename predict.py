@@ -1,5 +1,6 @@
 import argparse
 import time
+import os
 
 import numpy as np
 import pandas as pd
@@ -7,6 +8,7 @@ import streamlit as st
 from joblib import load
 from scipy.stats import pearsonr
 from sklearn.metrics import mean_squared_error
+from xgboost import XGBRegressor
 
 
 def predict(
@@ -17,6 +19,7 @@ def predict(
     path_x_test,
     y_pred_filename,
     path_y_test,
+    gpu=False,
 ):
 
     """
@@ -35,8 +38,32 @@ def predict(
      Returns:
         rp (float), rmse (float): Return rp and rmse metrics on the test set.
     """
-
-    ml_score = load(path_ml_score)
+    
+    if gpu:
+    
+      ml_score = XGBRegressor(
+            n_estimators=20000,
+            max_depth=8,
+            learning_rate=0.005,
+            subsample=0.7,
+            tree_method="gpu_hist",
+            predictor="gpu_predictor",
+        )
+        
+      ml_score.load_model(path_ml_score)
+      
+    else:
+    
+      ml_score = XGBRegressor(
+            n_estimators=20000,
+            max_depth=8,
+            learning_rate=0.005,
+            subsample=0.7,
+            tree_method="hist",
+            predictor="cpu_predictor",
+        )
+        
+      ml_score.load_model(path_ml_score)
 
     with open(path_columns, "r") as file:
         lines = file.readlines()
@@ -51,7 +78,7 @@ def predict(
     x_test = pd.read_csv(path_x_test, index_col=0)
     x_test = (x_test.loc[:, columns] - mean) / std
 
-    y_pred = ml_score.predict(x_test.to_numpy())
+    y_pred = ml_score.predict(x_test)
     y_pred_df = pd.DataFrame(y_pred, index=list(x_test.index), columns=["y_pred"])
     y_pred_df.to_csv(y_pred_filename)
 

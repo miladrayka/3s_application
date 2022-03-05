@@ -4,7 +4,6 @@ import time
 import numpy as np
 import pandas as pd
 import streamlit as st
-from joblib import dump
 from scipy.stats import pearsonr
 from sklearn.metrics import mean_squared_error
 from xgboost import XGBRegressor
@@ -25,10 +24,10 @@ def input_reader(path_input, path_target):
         X, Y(tuple): X (features) and Y (target) pd.DataFrame
     """
 
-    X = pd.read_csv(path_input, index_col=0)
+    X = pd.read_csv(path_input, index_col="pdbid")
 
     Y = pd.read_csv(path_target, index_col="pdbid")
-    Y = Y.drop(labels=["Unnamed: 0"], axis=1)
+    #Y = Y.drop(labels=["Unnamed: 0"], axis=1)
     Y = Y.reindex(X.index)
 
     return X, Y
@@ -254,7 +253,7 @@ def train_pipline(
 
     print(f"Rp: {rp:.3f} RMSE: {rmse:.3f}\n")
 
-    dump(xgb_reg, filename)
+    xgb_reg.save_model(filename)
 
     return rp, rmse, xgb_reg, mean, std
 
@@ -310,7 +309,7 @@ if __name__ == "__main__":
         "-f",
         "--filename",
         type=str,
-        default="saved_model.joblib",
+        default="saved_model.json",
         help="Filename of the trained model for saving.",
     )
 

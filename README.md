@@ -53,11 +53,13 @@ Below packages should be installed for using 3S. Dependecies:
 
 - notebook = 6.4.8
 
+- pdb2pqr = 3.5.2
+
 For installing first make a virtual environment and activate it.
 
 On windows:
 
->    python py -m venv env
+>    python -m venv env
 
 >    .\env\Scripts\activate
 
@@ -103,7 +105,7 @@ analysed.
 
 5-Add Hydrogen:
 
-Add hydrogens to ligand and protein at pH=7.4 using PDB2PQR and Openbabel.
+Add hydrogens to ligand and protein at pH=7.4 using PDB2PQR and Openbabel. For installing Openbabel check this [link](https://openbabel.org/docs/dev/Installation/install.html).
 
 Check the provided **Tutorial.pdf** file for more information and example.
 
