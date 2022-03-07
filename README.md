@@ -2,7 +2,6 @@
 --
 [![Python 3.7](https://img.shields.io/badge/python-3.7-blue.svg)](https://www.python.org/downloads/release/python-360/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/miladrayka/3s_application.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/miladrayka/3s_application/context:python)
 
 ![Ubuntu 20.04](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
