@@ -1,6 +1,6 @@
 biopandas==0.3.0.dev0
 matplotlib==3.5.1
-notebook==6.4.8
+notebook==6.4.10
 numpy==1.22.2
 pandas==1.4.1
 progressbar2==4.0.0
