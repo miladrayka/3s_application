@@ -2,9 +2,7 @@
 --
 [![Python 3.7](https://img.shields.io/badge/python-3.7-blue.svg)](https://www.python.org/downloads/release/python-360/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/miladrayka/3s_application.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/miladrayka/3s_application/context:python)
 
-![Ubuntu 20.04](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
 ![Windows 10](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 
 
@@ -87,7 +85,7 @@ analysed.
 
 5-Add Hydrogen:
 
-Add hydrogens to ligand and protein at pH=7.4 using PDB2PQR and Openbabel. For installing Openbabel check this [link](https://openbabel.org/docs/dev/Installation/install.html).
+Add hydrogens to ligand and protein at pH=7.4 using PDB2PQR and Openbabel. For installing Openbabel check on this [link](https://openbabel.org/docs/dev/Installation/install.html).
 
 Check the provided **Tutorial.pdf** file for more information and example.
 
