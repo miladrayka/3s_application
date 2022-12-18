@@ -1,13 +1,13 @@
-biopandas==0.3.0.dev0
-matplotlib==3.5.1
-notebook>=6.4.10
-numpy==1.22.2
-pandas==1.4.1
-progressbar2==4.0.0
-scikit-learn==1.0.2
-scipy==1.8.0
-seaborn==0.11.2
-streamlit==1.11.1
-xgboost==1.5.2
+biopandas==0.4.1
+matplotlib==3.6.2
+jupyterlab==4.0.0a31
+numpy==1.24.0rc2
+pandas==1.5.2
+progressbar2==4.3b0
+scikit-learn==1.2.0
+scipy==1.10.0rc1
+seaborn==0.12.1
+streamlit==1.16.0
+xgboost==1.7.2
 pdb2pqr==3.5.2
 

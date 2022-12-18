@@ -35,8 +35,8 @@ Distance-weighted Interatomic Contact Features Using Extremely Randomized Trees
 Algorithm](https://onlinelibrary.wiley.com/doi/abs/10.1002/minf.202060084)\n
 [2 - GB-Score: Minimally Designed Machine Learning Scoring Function Based on 
 Distance-weighted Interatomic Contact Features](https://chemrxiv.org/engage/chemrxiv/article-details/6210b55ce0f5297c08b7f36a)\n
-[3 - Impact of non-normal error distributions on the benchmarking and ranking of quantum machine learning models]
-(https://iopscience.iop.org/article/10.1088/2632-2153/aba184/meta)
+[3 - Impact of non-normal error distributions on the benchmarking and ranking of quantum machine 
+learning models](https://iopscience.iop.org/article/10.1088/2632-2153/aba184/meta)
 """
 )
 
@@ -131,7 +131,7 @@ ligand atom of type *i* and the *k*-th protein atom of type *j*, which is less t
 
     directory = st.text_input(
         "Enter directory of your complex structures:",
-        value="structures",
+        value="Example/structures",
         help="Indicating path of complex structures. e.g /Example/structures",
     )
 
@@ -231,7 +231,7 @@ if add_selectbox == "2-Model Training":
 
     path_x = st.text_input(
         "Enter path of features data (.csv):",
-        value="x_set.csv",
+        value="Example/files/x_set.csv",
         help="Indicating path of features data. e.g Example/files/x_set.csv",
     )
 
@@ -247,7 +247,7 @@ if add_selectbox == "2-Model Training":
 
     path_y = st.text_input(
         "Enter path of target data (.csv):",
-        value="y_set.csv",
+        value="Example/files/y_set.csv",
         help="Indicating path of target data. Example/files/y_set.csv",
     )
 
@@ -263,7 +263,7 @@ if add_selectbox == "2-Model Training":
 
     path_test_id = st.text_input(
         "Enter path of test set pdbid (.csv):",
-        value="test_set_pdbid.csv",
+        value="Example/files/test_set_pdbid.csv",
         help="Indicating path of test set pdbid. e.g Example/files/test_set_pdbid.csv",
     )
 
@@ -307,7 +307,7 @@ if add_selectbox == "2-Model Training":
 
     filename = st.text_input(
         "Enter output filename in .json:",
-        value="saved_model.joblib",
+        value="Example/model/gb_score_cpu.json",
         help="""Enter your desired filename 
                          with joblib extension as an output file
                          to save the trained model. e.g trained_model.json""",
@@ -374,7 +374,7 @@ $e_{M, i} = r_{i} - C_{M,i}$"""
     try:
         uploaded_file = st.text_input(
             "Load your data (.csv)",
-            value="prediction_test_set.csv",
+            value="Example/files/prediction_test_set.csv",
             help="Enter .csv file of your data. e.g Example/files/prediction_test_set.csv",
         )
 
@@ -634,7 +634,7 @@ error threshold."""
                 "Download outliers plot", data=file, file_name="error_distribution.png"
             )
 
-    st.write("""All theoretical information in this section are extracted from [3].""")
+    st.write("""All theoretical information in this section is extracted from [3].""")
 
 if add_selectbox == "3-Prediction":
 
@@ -660,7 +660,7 @@ if add_selectbox == "3-Prediction":
 
     path_ml_score = st.text_input(
         "A ML saved model",
-        value="gb_score_cpu.json",
+        value="Example/model/gb_score_cpu.json",
         help="A ML saved model based on XGBoost in .joblib. e.g /Example/model/gb_score_cpu.json",
     )
 
@@ -671,7 +671,7 @@ if add_selectbox == "3-Prediction":
 
     path_columns = st.text_input(
         "Features name",
-        value="columns_pdbbind_2019.txt",
+        value="Example/files/columns_pdbbind_2019.txt",
         help="""A file (.txt) contains name of all not discarded columns during
         preprocessing. Generated during **Model Training** as *columns.txt*. e.g /Example/files/columns_pdbbind_2019.txt""",
     )
@@ -683,7 +683,7 @@ if add_selectbox == "3-Prediction":
 
     path_mean = st.text_input(
         "Mean of features",
-        value="mean_pdbbind_2019.csv",
+        value="Example/files/mean_pdbbind_2019.csv",
         help="""A csv file contain all mean for features. Generated during **Model Training** as *mean.csv*. e.g /Example/files/mean_pdbbind_2019.csv""",
     )
 
@@ -694,7 +694,7 @@ if add_selectbox == "3-Prediction":
 
     path_std = st.text_input(
         "STD of features",
-        value="std_pdbbind_2019.csv",
+        value="Example/files/std_pdbbind_2019.csv",
         help="A csv file contain all std for features. Generated during **Model Training** as *std.csv*. e.g /Example/files/std_pdbbind_2019.csv",
     )
 
@@ -705,7 +705,7 @@ if add_selectbox == "3-Prediction":
 
     path_x_test = st.text_input(
         "Generated features of complex",
-        value="x_test_set.csv",
+        value="Example/files/x_test_set.csv",
         help="A csv file contains test set features. e.g /Example/files/x_test_set.csv",
     )
 
@@ -716,7 +716,7 @@ if add_selectbox == "3-Prediction":
 
     y_pred_filename = st.text_input(
         "Prediction filename",
-        value="pred_test_set.csv",
+        value="Example/files/pred_test_set.csv",
         help="Filename for saving prediction with .csv extension. e.g /Example/files/pred_test_set.csv",
     )
 
@@ -811,7 +811,7 @@ if add_selectbox == "5-Add Hydrogen":
 
     directory = st.text_input(
         "Enter directory of your complex structures:",
-        value="structures",
+        value="Example/structures",
         help="Indicating path of complex structures. e.g Example/structures",
     )
 

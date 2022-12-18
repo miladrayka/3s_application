@@ -29,33 +29,10 @@ Installation
 --
 Below packages should be installed for using 3S. Dependecies:
 
-- python = 3.7
+- python (3.9), numpy, pandas, seaborn, streamlit, matplotlib, biopandas
+scipy, scikit-learn ,progressbar2, xgboost, jupyterlab, pdb2pqr
 
-- numpy = 1.22.2
-
-- pandas = 1.4.1
-
-- seaborn = 0.11.2
-
-- streamlit = 1.6.0
-
-- matplotlib = 3.5.1
-
-- biopandas = 0.3.0
-
-- scipy = 1.8.0
-
-- scikit-learn = 1.0.2
-
-- progressbar2 = 4.0.0
-
-- xgboost = 1.5.2
-
-- notebook = 6.4.8
-
-- pdb2pqr = 3.5.2
-
-For installing first make a virtual environment and activate it.
+First install [python](https://www.python.org/downloads/release/python-395/) then make a virtual environment and activate it.
 
 On windows:
 
@@ -63,23 +40,24 @@ On windows:
 
 >    .\env\Scripts\activate
 
-On macOS and Linux:
-
->    python3 -m venv env
-
->    source env/bin/activate
 
 Which *env* is the location to create the virtual environment. Now you can install packages with one of the following methods:
 
 >   1- pip install *package_name*
 
->  2 - python setup.py install
+>   2 - python setup.py install
 
-> 3 - python install -r requirements.txt
+>   3 - python install -r requirements.txt
+
+>   4 - Double click on install.bat (**Recommended**)
 
 For running 3*S*:
 
 > streamlit run webapp.py
+
+or
+
+> Double click on webapp.bat (**Recommended**)
 
 Usage
 --
@@ -116,14 +94,13 @@ Check the provided **Tutorial.pdf** file for more information and example.
 System Specification
 --
 
-3*S* is tested on the following systems:
+3*S* is tested on the following system:
 
 | OS  |  RAM | CPU  | Browser |
 | ------------ | ------------ | ------------ |------------ |
-| Windows 10  | 4.00 GB  |  Intel Core (TM) i5 - 7200U (2.50 GHz) | Firefox - 97.0.1 (64-bit)|
-| Ubuntu 20.04  |  8.00 GB | AMD FX (TM) - 770k Quad Core (3.50 GHz)  | Firefox - 97.0.1 (64-bit)| 
+| Windows 10  | 4.00 GB  |  Intel Core (TM) i5 - 7200U (2.50 GHz) | Firefox - 97.0.1 (64-bit)| 
 
-We don't assume using macOS or other browsers make problems. 
+We don't assume using macOS, Linux, or other browsers make problems. 
 
 Development
 --
