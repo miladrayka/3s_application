@@ -80,6 +80,7 @@ def predict(
 
     y_pred = ml_score.predict(x_test)
     y_pred_df = pd.DataFrame(y_pred, index=list(x_test.index), columns=["y_pred"])
+    y_pred_df = y_pred_df.round(3)
     y_pred_df.to_csv(y_pred_filename)
 
     if path_y_test != "None":

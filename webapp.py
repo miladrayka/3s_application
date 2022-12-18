@@ -761,7 +761,7 @@ if add_selectbox == "3-Prediction":
 
         st.info("Results:")
 
-        st.dataframe(y_df, width=400, height=600)
+        st.dataframe(y_df.round(3), width=400, height=600)
 
 if add_selectbox == "5-Add Hydrogen":
 
