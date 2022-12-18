@@ -780,9 +780,10 @@ if add_selectbox == "5-Add Hydrogen":
                 f"obabel -imol2 {ligand} -omol2 -O {ligand} -p 7.4", shell=True
             )
             subprocess.run(
-                f"pdb2pqr30 --ff=AMBER --chain ' ' --with-ph=7.4 {protein_pdb} {protein_pqr}",
+                f"pdb2pqr30 --ff=AMBER  --with-ph=7.4 {protein_pdb} {protein_pqr}",
                 shell=True,
             )
+            #--chain ' '
             subprocess.run(
                 f"obabel -ipqr {protein_pqr} -opdb -O {protein_pdb}", shell=True
             )
