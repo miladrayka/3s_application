@@ -19,7 +19,7 @@ Citation
 
 1-[ET-score: Improving Protein-ligand Binding Affinity Prediction Based on Distance-weighted Interatomic Contact Features Using Extremely Randomized Trees Algorithm](https://onlinelibrary.wiley.com/doi/full/10.1002/minf.202060084)
 
-2-[GB-Score: Minimally Designed Machine Learning Scoring Function Based on Distance-weighted Interatomic Contact Features](https://chemrxiv.org/engage/chemrxiv/article-details/6210b55ce0f5297c08b7f36a)
+2-[GB-Score: Minimally Designed Machine Learning Scoring Function Based on Distance-weighted Interatomic Contact Features](https://onlinelibrary.wiley.com/doi/10.1002/minf.202200135)
 
 3-[Impact of non-normal error distributions on the benchmarking and ranking of quantum machine learning models](https://iopscience.iop.org/article/10.1088/2632-2153/aba184/meta)
 
