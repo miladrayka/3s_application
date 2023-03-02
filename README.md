@@ -112,5 +112,5 @@ To ensure code quality and consistency the following tools are used during devel
 Copyright
 --
 
-Copyright (c) 2021-2022, Milad Rayka
+Copyright (c) 2021-2023, Milad Rayka
 
