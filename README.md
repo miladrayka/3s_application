@@ -12,7 +12,7 @@ Straightforwarding Scoring Suite (3S) is a collection of several tools to ease t
 
 Contact
 ---
-Milad Rayka, Chemistry and Chemical Engineering Research Center of Iran, milad.rayka@yahoo.com
+Milad Rayka, milad.rayka@yahoo.com
 
 Citation
 --
