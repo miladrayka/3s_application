@@ -5,7 +5,6 @@ import os
 import numpy as np
 import pandas as pd
 import streamlit as st
-from joblib import load
 from scipy.stats import pearsonr
 from sklearn.metrics import mean_squared_error
 from xgboost import XGBRegressor
