@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: threesss
+Version: 1.0
+Summary: Straight forwarding making ML-based scoring function.
+Home-page: www.github.com/miladryaka
+Author: Milad Rayka
+Author-email: milad.rayka@yahoo.com
+License: MIT
+Platform: Windows
+Requires-Python: ==3.9
+License-File: LICENSE

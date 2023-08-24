@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+threesss.egg-info/PKG-INFO
+threesss.egg-info/SOURCES.txt
+threesss.egg-info/dependency_links.txt
+threesss.egg-info/requires.txt
+threesss.egg-info/top_level.txt

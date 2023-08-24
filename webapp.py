@@ -486,9 +486,11 @@ standard normal distribution (in the normal case, all points should lie over the
         plt.plot(quantile[0], quantile[1], color, label="Sample")
         plt.xlim(-4, 4)
         plt.ylim(-4, 4)
-        plt.xlabel("Theoretical Quantile", fontsize=14)
-        plt.ylabel("Sample Quantile", fontsize=14)
-        plt.title("Normal Quantile-Quantile Plot", fontsize=16)
+        plt.xticks(fontsize=18)
+        plt.yticks(fontsize=18)
+        plt.xlabel("Theoretical Quantile", fontsize=20)
+        plt.ylabel("Sample Quantile", fontsize=20)
+        plt.title("Normal Quantile-Quantile Plot", fontsize=22)
         if save:
             plt.savefig("qqplot.png", dpi=300)
         plt.legend()
@@ -539,9 +541,11 @@ estimated by the mean signed error(*MSE*), and same standard deviation, estimate
             linewidth=2,
             color=color2,
         )
-        plt.xlabel("Residual Error", fontsize=14)
-        plt.ylabel("Density", fontsize=14)
-        plt.title("Histogram of Residual Errors", fontsize=16)
+        plt.xticks(fontsize=18)
+        plt.yticks(fontsize=18)
+        plt.xlabel("Residual Error", fontsize=20)
+        plt.ylabel("Density", fontsize=20)
+        plt.title("Histogram of Residual Errors", fontsize=22)
         if save:
             plt.savefig("residual_histogram.png", dpi=300)
         plt.show()
